@@ -1,0 +1,75 @@
+body {
+  background: url(https://www.formula1.com/etc/designs/fom-website/images/Background.png);
+  font-family: 'Libre Franklin', sans-serif;
+  line-height: 1.5;
+  margin: 1em auto;
+  max-width: 1080px; }
+
+.header {
+  background: black;
+  margin-bottom: 1em;
+  padding: 1em; }
+
+.ff1 {
+  color: #fff;
+  display: inline-block;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: -0.8em;
+  text-transform: uppercase; }
+  .ff1 * {
+    float: left; }
+  .ff1 .top, .ff1 .bottom {
+    display: inline-block;
+    font-size: 2.55em; }
+  .ff1 .top {
+    text-indent: 0.125em; }
+  .ff1 .bottom {
+    clear: left; }
+  .ff1 .right {
+    color: #e12826;
+    /* color: #d31411; */
+    font-size: 6em;
+    margin-top: -0.5em;
+    text-indent: 0.05em; }
+  .ff1:after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.driver-card {
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+  background: #fff;
+  display: flex;
+  margin-bottom: 1em;
+  text-transform: uppercase; }
+
+.driver-card .content {
+  padding: 1em; }
+
+.driver-card .title {
+  font-weight: bold;
+  font-size: 1.25em;
+  opacity: 0.87;
+  text-transform: uppercase; }
+
+.driver-card .subtitle {
+  font-size: 1.25em;
+  opacity: 0.87; }
+
+.driver-card .image {
+  height: 160px;
+  width: 160px;
+  order: -1;
+  overflow: hidden; }
+
+.driver-card .image img {
+  margin-left: -80px;
+  width: 320px; }
+
+.flag {
+  height: 24px;
+  width: 36px;
+  margin: 0 0.25em -4px;
+  vertical-align: baseline; }

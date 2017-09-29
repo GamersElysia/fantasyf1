@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,400i,800,800i&amp;subset=latin-ext" rel="stylesheet">
+<title>{% block title %}{% endblock %} - Fantasy Formula 1</title>
+{% endblock %}
+
+</head>
+<body>
+
+<div class="header">
+    <div class="ff1">
+        <span class="top">Fantasy</span>
+        <span class="bottom">Formula</span>
+        <span class="right">1</span>
+    </div>
+</div>
+
+<div id="content">{% block content %}{% endblock %}</div>
+
+</body>
+</html>

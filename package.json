@@ -1,0 +1,15 @@
+{
+  "name": "fantasyf1",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "node-sass -wro fantasyf1/static/css ./fantasyf1/scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmgpeeters/fantasyf1.git"
+  },
+  "homepage": "https://github.com/jmgpeeters/fantasyf1#readme",
+  "dependencies": {
+    "node-sass": "^4.5.3"
+  }
+}

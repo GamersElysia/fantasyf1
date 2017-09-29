@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+{% block title %}Driver Standings{% endblock %}
+{% block content %}
+    {% for entry in driver_standings %}
+        <div class="driver-card">
+            <div class="content">
+                <div class="title">
+                    <span class="title-text">
+                        {{ entry.Driver.givenName|e }}
+                        {{ entry.Driver.familyName|e }}
+                    </span>
+                    <!-- <img src="{{ entry.flag_image }}" class="flag"> -->
+                </div>
+                <div class="subtitle">
+                    <span class="subtitle-text">
+                        {{ entry.Constructors[0].name|e }}
+                    </span>
+                </div>
+                <br>
+                <div class="title">
+                    <span class="title-text">
+                        {{ entry.points|e }} points
+                    </span>
+                </div>
+            </div>
+            <div class="image">
+                <img src="{{ entry.image }}" class="driver">
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}

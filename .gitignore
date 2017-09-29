@@ -1,0 +1,3 @@
+__pycache__
+node_modules
+/formula1/static/css # Generated from .scss files.
